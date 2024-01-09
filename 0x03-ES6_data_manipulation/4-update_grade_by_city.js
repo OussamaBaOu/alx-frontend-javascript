@@ -5,4 +5,5 @@ export default function updateStudentGradeByCity(arr, city, newGrades) {
       let grade = newGrades.find(g => g.studentId === student.id);
       return { ...student, grade: (grade && grade.grade) || 'N/A' };
     });
+
 }
